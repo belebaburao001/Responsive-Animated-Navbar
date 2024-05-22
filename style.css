@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+#container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background: url(./BG\ Image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo h1{
+    color: #ffff;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -5px;
+    cursor: pointer;
+}
+
+#logo i{
+    color: #ffff;
+    font-size: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#links{
+    width: 100%;
+    /* max-width: 1550px;
+    margin: 0 auto; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #000;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+@media (min-width: 1550px) {
+    #links {
+        width: 100%;
+        max-width: 1550px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+#links a{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+#links i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #main{
+        padding: 15px 25px;
+    }
+
+    #logo h1{
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: -3px;
+    }
+    
+    #links a{
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+  #links i{
+    font-size: 4rem;
+    font-weight: 500;
+  }  
+}
+
+@media (max-width: 425px) {
+    #main{
+        padding: 10px 20px;
+    }
+
+    #logo h1{
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: -3px;
+    }
+    
+    #links a{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    
+      #links i{
+        font-size: 3rem;
+        font-weight: 500;
+      }  
+    }
+
+    @media (max-height: 600px) { 
+        #links a{
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 600;
+          } 
+        }
+
+        @media (max-height: 800px) { 
+            #links a{
+                color: #fff;
+                font-size: 3.5rem;
+                font-weight: 600;
+              } 
+            }
